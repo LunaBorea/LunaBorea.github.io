@@ -3,15 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platformer using Canvas</title>
+    <title>LunaBorea - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Platformer</h1>
-        <canvas id="canvas"> Platformer game </canvas>
-        <script src="script.js"></script>
-        <div class="space"></div>
-    </main>
+    <nav>
+        <div class="nav-edge"></div>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="nav-edge"></div>
+    </nav>
+    <div class="introHeader" id="home">
+        <div id="gradient"></div>
+        <h1><span class="magic">LunaBorea</span></h1>
+        <!-- Moving gradient effect inspired by Hyperplexed, "This Effect Really Just Shouldn't Be Possible" on Youtube -->
+        <h2>Aspiring front-end and game developer</h2>
+    </div>
+    <section id="about">
+        <div id="bio">
+            <div id="biowrap">
+                <h1><span class="funky">LunaBorea</span></h1>
+                <h2>(She/her)</h2>
+            </div>
+            <div class="divider"></div>
+            <p>I am an aspiring <span class="funky">game</span> and <span class="funky">front-end developer</span>, currently a student.</p>
+            <p><span class="funky">Passionate</span> about storytelling, art, science and games.</p>
+            <p>Born and based in <span class="funky">Finland</span>.</p>
+        </div>
+        <div id="skills">
+            <h1><span class="funky">Skills</span></h1>
+            <div class="divider"></div>
+            <div id="html" class="subskill">
+                <div class="subskillwrap">
+                    <img src="/images/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png" alt="HTML Logo">
+                    <p>HTML - Proficient</p>
+                </div>
+            </div>
+            <div id="css" class="subskill">
+                <div class="subskillwrap">
+                    <img src="/images/CSS3_logo.png" alt="CSS Logo">
+                    <p>CSS - Intermediate</p>
+                </div>
+            </div>
+            <div id="javascript" class="subskill">
+                <div class="subskillwrap">
+                    <img src="/images/JavaScript-logo.png" alt="Javascript Logo">
+                    <p>Javascript - Beginner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div id="mainProjects">
+            <a href="/projects/PlatformerCanvas/index.html" target="_blank">Platformer</a>
+        </div>
+        <div id="allProjects"></div>
+    </section>
+    <section id="contact"></section>
+    <script src="script.js"></script>
 </body>
 </html>
