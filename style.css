@@ -215,7 +215,7 @@ nav a {
 }
 
 .funky {
-    color: rgb(161, 127, 241);
+    color: #a17ff1;
     display: inline-block;
 }
 .divider {
@@ -244,7 +244,7 @@ nav a {
     font-style: normal;
 }
 #bio h2 {
-    color: rgb(173, 173, 173);
+    color: #adadad;
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     font-optical-sizing: auto;
@@ -314,9 +314,240 @@ nav a {
     border: 1px solid blue;
 
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 
     background: linear-gradient(to bottom, #201a3d, #5b3a77);
 }
+
+#projects h1 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#projects .divider {
+    width: 120%;
+    transform: translateX(-10%);
+}
+
+#mainProjects {
+    width: 80%;
+    height: 100%;
+    margin-top: 2em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+#row1 {
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+#row2, #row3 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+
+.project {
+    background-color: #61616194;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+#row1 .projectContent {
+    height: 20%;
+    width: 100%;
+}
+#row1 .projectTitle {
+    font-size: 1.25em !important;
+    margin-left: 4%;
+}
+#row1 .projectDesc {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75em;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 4%;
+}
+#row1 .projectDesc a {
+    color: #a17ff1;
+    text-decoration: inherit;
+}
+#row1 .projectGo {
+    height: 10%;
+    width: 23%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    align-self: flex-start;
+    margin-left: 4%;
+    border-radius: 10px;
+    background-color: #a17ff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#row1 .projectGo:hover {
+    background-color: #b59cee;
+}
+#row1 .projectGo a {
+    width: 100%;
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5em;
+}
+#row1 .projectGo img {
+    transform: rotate(-90deg);
+}
+
+#row1 .projectGithub {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#row1 .projectGithub a {
+    margin-right: 1em;
+}
+#row1 .projectGithub img {
+    width: 2em;
+    height: 2em;
+}
+
+
+
+#row2 .projectContent, #row3 .projectContent {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    
+    border: 1px solid red;
+}
+#row2 .projectTitle, #row3 .projectTitle {
+    font-size: 1.25em !important;
+    margin-left: 4%;
+    border: 1px solid red;
+}
+#row2 .projectDesc, #row3 .projectDesc {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75em;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 4%;
+    border: 1px solid red;
+}
+#row2 .projectDesc a, #row3 .projectDesc a {
+    color: #a17ff1;
+    text-decoration: inherit;
+    border: 1px solid red;
+}
+#row2 .projectGo, #row3 .projectGo {
+    height: 10%;
+    width: 23%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    align-self: flex-start;
+    margin-left: 4%;
+    border-radius: 10px;
+    background-color: #a17ff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+#row2 .projectGo:hover, #row3 .projectGo:hover {
+    background-color: #b59cee;
+}
+#row2 .projectGo a, #row3 .projectGo a {
+    width: 100%;
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5em;
+    border: 1px solid red;
+}
+#row2 .projectGo img, #row3 .projectGo img {
+    transform: rotate(-90deg);
+    border: 1px solid red;
+}
+
+#row2 .projectGithub, #row3 .projectGithub {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid red;
+}
+#row2 .projectGithub a, #row3 .projectGithub a {
+    margin-right: 1em;
+}
+#row2 .projectGithub img, #row3 .projectGithub img {
+    width: 2em;
+    height: 2em;
+}
+
+#one > .projectImage {
+    width: 95%;
+    height: 50%;
+    margin-top: 0.75em;
+
+    background: url(images/projectsImages/platformerthumbnail.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
+}
+.projectImage {
+    width: 95%;
+    height: 50%;
+    margin-top: 0.75em;
+
+    background: url(images/placeholder.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
+}
+
 /* PROJECTS */
 
 
@@ -373,6 +604,19 @@ nav a {
     }
 }
 
+@media (max-width: 800px) {
+    #projects {
+        height: 200vh;
+    }
+    #row1 {
+        height: 60%;
+        flex-flow: column nowrap;
+    }
+    #row2, #row3 {
+        height: 20%;
+    }
+}
+
 @media (max-width: 600px) {
     .introHeader h1 {
         font-size: 15vw;
@@ -411,4 +655,16 @@ nav a {
         font-size: 1.5rem;
     }
 
+
+    
+    #projects {
+        height: 110vh;
+    }
+    #mainProjects {
+        overflow: scroll;
+    }
+    #row1, #row2, #row3 {
+        min-height: 100vh;
+        flex-flow: column nowrap;
+    }
 }
